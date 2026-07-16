@@ -1,127 +1,30 @@
-# PSE Data Scraper for Python
+# PSE Edge Data Scraper
 
-PSE Data Scraper pulls company lists and historical price data from PSE EDGE,
-then exports them to CSV for analysis. It includes a CLI, retry logic, optional
-caching, and a small Python API.
+A lightweight Python package and CLI for downloading historical stock price data from PSE Edge and exporting it into clean CSV files for analysis.
 
-## Quick Start
+## Features
 
-Install dependencies:
+- Download the PSE company list
+- Fetch historical stock price data per company
+- Save one CSV file per company
+- Combine all company files into a single dataset
+- Deduplicate repeated trading dates returned by the API
+- Provide both a CLI and a Python API
+- Support caching and refresh options
 
-```bash
-pip install -r requirements.txt
-```
+## Project Structure
 
-Run the full pipeline:
-
-```bash
-python -m pse_data_scraper sync
-```
-
-You can also run the direct entry point (same defaults as `pse sync`):
-
-```bash
-python main.py
-```
-
-## CLI Usage
-
-Install locally for the `pse` command:
-
-```bash
-pip install -e .
-```
-
-Examples:
-
-```bash
-pse sync
-pse companies --refresh
-pse prices \
-  --symbols BDO,EURO,GLO,GMA7,MEG \
-  --from 2026-01-01 \
-  --to 2026-07-15
-pse export --format csv
-pse status
-```
-
-Common options:
-
-- `--rate-limit` sets the delay between requests.
-- `--symbols` limits downloads to specific tickers.
-- `--max-companies` is useful for quick test runs.
-- `--refresh` forces re-downloads even if files exist.
-- `--no-cache` disables cached API responses.
-- Dates accept `MM-DD-YYYY` or `YYYY-MM-DD`.
-
-## Configuration
-
-Generate a starter config:
-
-```bash
-pse init
-```
-
-By default, the CLI reads `pse.toml` from the current directory. You can
-override it with `--config path/to/pse.toml`.
-
-Example `pse.toml`:
-
-```toml
-[paths]
-data_dir = "data"
-cache_dir = ".cache"
-
-[network]
-rate_limit = 0.6
-
-[download]
-start_date = "2020-01-01"
-symbols = ["BDO", "ALI"]
-```
-
-## Python API
-
-```python
-from pse_data_scraper.client import PSEClient
-from pse_data_scraper.scraper import scrape_companies, save_companies_to_csv
-from pse_data_scraper.downloader import download_historical_data
-from pse_data_scraper.combiner import combine_csvs
-
-client = PSEClient(rate_limit_seconds=0.6)
-companies = scrape_companies(client)
-save_companies_to_csv(companies, "data/companies.csv")
-download_historical_data(client, companies=companies, output_dir="data/history")
-combine_csvs("data/history", "data/combined.csv")
-```
-
-## Output Files
-
-- `data/companies.csv` - company list with IDs and symbols
-- `data/history/` - one CSV per company
-- `data/combined.csv` - consolidated price dataset
-- `.cache/` - optional cached API responses
-
-## API Notes
-
-The scraper uses endpoints observed from PSE EDGE. See `docs/API.md` for
-payload and response details.
-
-## Structure
-
-```
-pse-data-scraper/
+```text
+pse-edge-data-scraper/
 ├── main.py
 ├── pyproject.toml
 ├── requirements.txt
 ├── requirements-dev.txt
 ├── pse_data_scraper/
 │   ├── __init__.py
-│   ├── __main__.py
 │   ├── cli.py
 │   ├── client.py
 │   ├── combiner.py
-│   ├── config.py
 │   ├── downloader.py
 │   ├── models.py
 │   ├── pipeline.py
@@ -129,27 +32,220 @@ pse-data-scraper/
 │   ├── status.py
 │   └── utils.py
 ├── tests/
-│   ├── conftest.py
-│   ├── test_client.py
-│   ├── test_combiner.py
-│   ├── test_config.py
-│   ├── test_downloader.py
-│   ├── test_models.py
-│   ├── test_scraper.py
-│   ├── test_sort.py
-│   └── test_utils.py
 └── docs/
-    └── API.md
-```
 
-## Development
+## Requirements
+
+- Python 3.10 or later
+- `requests`
+- `beautifulsoup4`
+
+---
+
+## Installation
+
+Clone the repository:
 
 ```bash
+git clone https://github.com/AlvinTubtub/pse-edge-data-scraper.git
+cd pse-edge-data-scraper
+```
+
+Create a virtual environment:
+
+```bash
+python3 -m venv .venv
+```
+
+Activate the virtual environment:
+
+**macOS / Linux**
+
+```bash
+source .venv/bin/activate
+```
+
+**Windows (PowerShell)**
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+Upgrade pip:
+
+```bash
+python -m pip install --upgrade pip
+```
+
+Install the project:
+
+```bash
+pip install -r requirements.txt
 pip install -e .
+```
+
+---
+
+## Quick Start
+
+Run the complete data pipeline:
+
+```bash
+pse sync
+```
+
+or run the main entry point directly:
+
+```bash
+python main.py
+```
+
+---
+
+# CLI Usage
+
+## Download the company list
+
+```bash
+pse companies
+```
+
+Refresh the company list:
+
+```bash
+pse companies --refresh
+```
+
+---
+
+## Download historical stock prices
+
+Example:
+
+```bash
+pse prices --symbols BDO,EURO,GLO,GMA7,MEG --from 2026-01-01 --to 2026-07-15
+```
+
+Download all companies:
+
+```bash
+pse prices
+```
+
+Limit the number of companies:
+
+```bash
+pse prices --max-companies 10
+```
+
+---
+
+## Export all CSV files into a single dataset
+
+```bash
+pse export --format csv
+```
+
+---
+
+## View download status
+
+```bash
+pse status
+```
+
+---
+
+# Output Files
+
+After a successful run, the project generates:
+
+| File | Description |
+|------|-------------|
+| `data/companies.csv` | Master list of PSE companies |
+| `data/history/` | Individual historical CSV files (one per company) |
+| `data/combined.csv` | Combined historical dataset |
+| `.cache/` | Cached API responses for faster downloads |
+
+---
+
+# Automatic Data Cleaning
+
+To improve data quality, the downloader automatically performs the following checks before saving each CSV:
+
+- Removes duplicate trading dates returned by the PSE Edge API.
+- Preserves only the first occurrence of identical duplicate records.
+- Detects conflicting duplicate records and logs a warning.
+- Sorts all historical records by trading date.
+
+This guarantees that every exported company CSV contains **one record per trading day**.
+
+---
+
+# Python API
+
+The package can also be used directly in Python.
+
+```python
+from pse_data_scraper.client import PSEClient
+from pse_data_scraper.pipeline import (
+    ensure_companies_csv,
+    download_prices,
+    export_prices,
+)
+
+client = PSEClient(rate_limit_seconds=0.6)
+
+companies = ensure_companies_csv(
+    client,
+    "data/companies.csv",
+)
+
+download_prices(
+    client=client,
+    companies=companies,
+    history_dir="data/history",
+    symbols=["BDO", "EURO", "GLO", "GMA7", "MEG"],
+    start_date="2026-01-01",
+    end_date="2026-07-15",
+)
+
+export_prices(
+    "data/history",
+    "data/combined.csv",
+)
+```
+
+---
+
+# Testing
+
+Install the development dependencies:
+
+```bash
 pip install -r requirements-dev.txt
+```
+
+Run all tests:
+
+```bash
 pytest
 ```
 
-## License
+---
 
-MIT. See `LICENSE`.
+# Notes
+
+- Historical price data is downloaded directly from the PSE Edge web service.
+- Company information is retrieved from the official PSE Edge listings.
+- The package supports both CLI and Python API usage.
+- Duplicate historical records returned by the API are automatically removed before export.
+- The project intentionally keeps external dependencies to a minimum.
+
+---
+
+# License
+
+This project is licensed under the **MIT License**.
+
+See the `LICENSE` file for more information.
