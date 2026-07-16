@@ -33,56 +33,59 @@ pse-edge-data-scraper/
 │   └── utils.py
 ├── tests/
 └── docs/
+```
 
 ## Requirements
 
 - Python 3.10 or later
 - `requests`
 - `beautifulsoup4`
+- `pandas` (installed automatically via `requirements.txt`)
 
 ---
 
 ## Installation
 
-Clone the repository:
+Follow these steps **in order**. The most common setup mistake is running `pse` before the package has actually been installed with `pip install -e .` — if you skip that step, your terminal will not recognize the `pse` command.
+
+### macOS / Linux — copy and paste
 
 ```bash
 git clone https://github.com/AlvinTubtub/pse-edge-data-scraper.git
 cd pse-edge-data-scraper
-```
 
-Create a virtual environment:
-
-```bash
 python3 -m venv .venv
-```
-
-Activate the virtual environment:
-
-**macOS / Linux**
-
-```bash
 source .venv/bin/activate
-```
 
-**Windows (PowerShell)**
-
-```powershell
-.venv\Scripts\Activate.ps1
-```
-
-Upgrade pip:
-
-```bash
 python -m pip install --upgrade pip
-```
-
-Install the project:
-
-```bash
 pip install -r requirements.txt
 pip install -e .
+
+pse --help
 ```
+
+### Windows (PowerShell) — copy and paste
+
+```powershell
+git clone https://github.com/AlvinTubtub/pse-edge-data-scraper.git
+cd pse-edge-data-scraper
+
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+pip install -e .
+
+pse --help
+```
+
+> **Windows note:** If `Activate.ps1` fails with a message about execution policies (a script cannot be loaded because running scripts is disabled), run this once in an elevated PowerShell session and then retry activation:
+> ```powershell
+> Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+> ```
+
+If `pse --help` prints the usage/help text, installation succeeded.
 
 ---
 
@@ -231,6 +234,32 @@ Run all tests:
 ```bash
 pytest
 ```
+
+---
+
+# Troubleshooting
+
+### `zsh: command not found: pse` / `'pse' is not recognized...` (Windows)
+
+This means the package hasn't been installed into your active virtual environment yet, or the virtual environment isn't activated. Fix:
+
+```bash
+# make sure you're inside the activated .venv, then:
+pip install -e .
+```
+
+### `520 Server Error` for `DisclosureCht.ax` when running `pse prices`
+
+This is a server-side error returned by the PSE Edge website itself (`edge.pse.com.ph`), not a bug in the scraper. It usually means PSE Edge is temporarily overloaded, rate-limiting requests, or briefly down. Things to try:
+
+- Wait a few minutes and re-run the same `pse prices` command.
+- Reduce request volume with `--max-companies` or fewer `--symbols` per run.
+- Increase the client's `rate_limit_seconds` (see the Python API example above) if you're scripting downloads.
+- Check whether `https://edge.pse.com.ph` loads normally in your browser — if it doesn't, the issue is on PSE's end and not fixable locally.
+
+### `WARNING: No CSV files found in data/history` when running `pse export`
+
+This happens when `pse prices` didn't successfully download any data (for example, because of the 520 errors above). Resolve the prices download issue first, confirm `data/history/` contains `.csv` files, then re-run `pse export`.
 
 ---
 
