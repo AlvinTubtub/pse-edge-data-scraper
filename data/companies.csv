@@ -1,0 +1,283 @@
+companyId,securityId,companyName,stockSymbol
+55,347,Asia Amalgamated Holdings Corporation,AAA
+19,181,"Atok-Big Wedge Co., Inc.",AB
+174,173,"AbaCore Capital Holdings, Inc.",ABA
+176,350,Asiabest Group International Inc.,ABG
+114,123,ABS-CBN Corporation,ABS
+15,259,ABS-CBN Holdings Corporation,ABSP
+57,180,Ayala Corporation,AC
+48,370,Acesite (Phils.) Hotel Corporation,ACE
+233,140,ACEN CORPORATION,ACEN
+121,170,"Alsons Consolidated Resources, Inc.",ACR
+16,183,"Aboitiz Equity Ventures, Inc.",AEV
+212,179,"Alliance Global Group, Inc.",AGI
+172,316,Arthaland Corporation,ALCO
+612,536,"Anchor Land Holdings, Inc.",ALHI
+180,293,"Ayala Land, Inc.",ALI
+686,674,"AllDay Marts, Inc.",ALLDY
+26,202,AyalaLand Logistics Holdings Corp.,ALLHC
+701,696,Alternergy Holdings Corporation,ALTER
+619,547,"AgriNurture, Inc.",ANI
+14,169,A. Soriano Corporation,ANS
+609,532,Aboitiz Power Corporation,AP
+177,182,"APC Group, Inc.",APC
+638,581,"Apollo Global Capital, Inc.",APL
+52,171,Anglo Philippine Holdings Corporation,APO
+678,654,"Altus Property Ventures, Inc.",APVI
+178,318,"Apex Mining Co., Inc.",APX
+33,321,Abra Mining and Industrial Corporation,AR
+38,294,"Araneta Properties, Inc.",ARA
+679,655,"AREIT, Inc.",AREIT
+694,689,Raslag Corp.,ASLAG
+34,320,Atlas Consolidated Mining and Development Corporation,AT
+56,176,"ATN Holdings, Inc.",ATN
+641,584,Asia United Bank Corporation,AUB
+673,646,Axelum Resources Corp.,AXLM
+697,692,Balai Ni Fruitas Inc.,BALAI
+108,353,Benguet Corporation,BC
+9,391,Berjaya Philippines Inc.,BCOR
+260,468,"BDO Unibank, Inc.",BDO
+21,252,Belle Corporation,BEL
+62,358,"BHI Holdings, Inc.",BH
+63,187,"Boulevard Holdings, Inc.",BHI
+66,116,Bright Kindle Resources & Investments Inc.,BKR
+49,233,Bloomberry Resorts Corporation,BLOOM
+181,359,"Bogo-Medellin Milling Company, Inc.",BMM
+692,687,Bank of Commerce,BNCOM
+234,101,Bank of the Philippine Islands,BPI
+13,234,"A Brown Company, Inc.",BRN
+60,188,Basic Energy Corporation,BSC
+669,636,Chelsea Logistics and Infrastructure Holdings Corp.,C
+213,361,Concrete Aggregates Corporation,CA
+183,366,"Central Azucarera de Tarlac, Inc.",CAT
+184,104,China Banking Corporation,CBC
+39,297,Cityland Development Corporation,CDC
+624,560,"Cebu Air, Inc.",CEB
+186,191,"Crown Equities, Inc.",CEI
+223,291,Centro Escolar University,CEU
+662,625,"Concreat Holdings Philippines, Inc.",CHP
+648,591,Concepcion Industrial Corporation,CIC
+668,635,"Cebu Landmasters, Inc.",CLI
+652,597,"Century Pacific Food, Inc.",CNPF
+680,656,"Converge Information and Communications Technology Solutions, Inc.",CNVRG
+637,580,Coal Asia Holdings Incorporated,COAL
+601,522,"COL Financial Group, Inc.",COL
+50,178,"Cosco Capital, Inc.",COSCO
+189,219,"Century Properties Group, Inc.",CPG
+621,549,Century Peak Holdings Corporation,CPM
+703,710,Citicore Renewable Energy Corporation,CREC
+691,686,Citicore Energy REIT Corp.,CREIT
+657,611,Crown Asia Chemicals Corporation,CROWN
+228,457,"Citystate Savings Bank, Inc.",CSB
+693,688,"CTS Global Equity Group, Inc.",CTS
+67,295,Cyber Bay Corporation,CYBR
+651,596,DoubleDragon Corporation,DD
+681,664,"DDMP REIT, Inc.",DDMPR
+642,585,Del Monte Pacific Limited,DELM
+187,125,"DFNN, Inc.",DFNN
+31,121,"Dominion Holdings, Inc.",DHI
+36,324,DITO CME Holdings Corp.,DITO
+68,323,"Dizon Copper-Silver Mines, Inc.",DIZ
+188,192,"DMCI Holdings, Inc.",DMC
+671,641,"D.M. Wenceslao & Associates, Incorporated",DMW
+639,582,"D&L Industries, Inc.",DNL
+647,590,Discovery World Corporation,DWC
+70,126,"EasyCall Communications Philippines, Inc.",ECP
+46,346,East Coast Vulcan Mining Corporation,ECVC
+71,148,EEI Corporation,EEI
+623,552,"IP E-Game Ventures, Inc.",EG
+191,193,"Everwoods Green Resources and Holdings, Inc.",EGRN
+190,300,"Empire East Land Holdings, Inc.",ELI
+632,571,Emperador Inc.,EMI
+653,599,ENEX Energy Corp.,ENEX
+219,236,"Euro-Med Laboratories Phil., Inc.",EURO
+634,573,East West Banking Corporation,EW
+81,118,First Abacus Financial Holdings Corporation,FAF
+151,161,"San Miguel Food and Beverage, Inc.",FB
+689,684,"Figaro Culinary Group, Inc.",FCG
+75,199,Filinvest Development Corporation,FDC
+643,586,"Ferronoux Holdings, Inc.",FERRO
+25,292,"Far Eastern University, Incorporated",FEU
+196,117,"Filipino Fund, Inc.",FFI
+600,521,First Gen Corporation,FGEN
+683,668,Filinvest REIT Corp.,FILRT
+225,196,F & J Prince Holdings Corporation,FJP
+226,302,"Filinvest Land, Inc.",FLI
+649,592,"First Metro Philippine Equity Exchange Traded Fund, Inc.",FMETF
+224,190,"Global Ferronickel Holdings, Inc.",FNI
+602,524,"Alliance Select Foods International, Inc.",FOOD
+197,197,First Philippine Holdings Corporation,FPH
+220,200,"Forum Pacific, Inc.",FPI
+676,650,"Fruitas Holdings, Inc.",FRUIT
+80,372,Filsyn Corporation,FYN
+198,201,"GEOGRACE Resources Philippines, Inc.",GEO
+193,307,"Global-Estate Resorts, Inc.",GERI
+69,127,"Globe Telecom, Inc.",GLO
+610,533,"GMA Network, Inc.",GMA7
+611,534,"GMA Holdings, Inc.",GMAP
+221,255,Grand Plaza Hotel Corporation,GPH
+132,243,Greenergy Holdings Incorporated,GREEN
+94,160,"Ginebra San Miguel,  Inc.",GSMI
+633,572,"GT Capital Holdings, Inc.",GTCAP
+82,203,"House of Investments, Inc.",HI
+674,647,AllHome Corp.,HOME
+690,685,"Haus Talk, Inc.",HTI
+613,538,"I-Remit, Inc.",I
+83,142,"International Container Terminal Services, Inc.",ICT
+660,617,Italpinas Development Corporation,IDC
+622,551,"Integrated Micro-Electronics, Inc.",IMI
+201,336,"Imperial Resources, Inc.",IMP
+84,337,"Philippine Infradev Holdings, Inc.",INFRA
+203,204,"Ionics, Inc.",ION
+4,218,"IPM Holdings, Inc.",IPM
+85,205,"iPeople, inc.",IPO
+204,128,"Island Information & Technology, Inc.",IS
+134,392,"Jackstones, Inc.",JAS
+86,158,Jollibee Foods Corporation,JFC
+210,207,"JG Summit Holdings, Inc.",JGS
+261,470,Jolliville Holdings Corporation,JOH
+2,150,"The Keepers Holdings, Inc.",KEEPR
+88,306,"Keppel Philippines Properties, Inc.",KEP
+672,645,"Kepwealth Property Phils., Inc.",KPPI
+236,469,"LBC Express Holdings, Inc.",LBC
+98,326,Lepanto Consolidated Mining Company,LC
+227,159,"Liberty Flour Mills, Inc.",LFM
+205,379,LMG Corp.,LMG
+37,377,Lodestar Investment Holdings Corporation,LODE
+605,528,Pacific Online Systems Corporation,LOTO
+698,693,LFM Properties Corporation,LPC
+61,186,Lopez Holdings Corporation,LPZ
+115,144,Lorenzo Shipping Corporation,LSC
+12,225,"LT Group, Inc.",LTG
+119,328,Manila Mining Corporation,MA
+106,212,MacroAsia Corporation,MAC
+145,221,"Macay Holdings, Inc.",MACAY
+3,241,Metro Alliance Holdings & Equities Corp.,MAH
+175,177,"Marcventures Holdings, Inc.",MARC
+135,163,"Max's Group, Inc.",MAXS
+1,130,Manila Bulletin Publishing Corporation,MB
+117,382,Manila Broadcasting Company,MBC
+128,108,Metropolitan Bank & Trust Company,MBT
+126,383,"MEDCO Holdings, Inc.",MED
+687,676,Medilines Distributors Incorporated,MEDIC
+127,215,Megaworld Corporation,MEG
+118,137,Manila Electric Company,MER
+120,120,Manulife Financial Corporation,MFC
+263,503,Makati Finance Corporation,MFIN
+105,214,"Millennium Global Holdings, Inc.",MG
+192,198,Metro Global Holdings Corporation,MGH
+206,217,Mabuhay Holdings Corporation,MHC
+102,256,"Manila Jockey Club, Inc.",MJC
+24,194,MJC Investments Corporation,MJIC
+677,653,MerryMart Consumer Corp.,MM
+682,665,Monde Nissin Corporation,MONDE
+131,309,"MRC Allied, Inc.",MRC
+685,671,"MREIT, Inc.",MREIT
+659,616,"Metro Retail Stores Group, Inc.",MRSGI
+100,242,Mabuhay Vinyl Corporation,MVC
+270,518,"Manila Water Company, Inc.",MWC
+627,564,Megawide Construction Corporation,MWIDE
+707,737,"Maynilad Water Services, Inc.",MYNLD
+103,213,"NiHAO Mineral Resources International, Inc.",NI
+625,561,Nickel Asia Corporation,NIKL
+264,510,Now Corporation,NOW
+606,529,National Reinsurance Corporation of the Philippines,NRCP
+179,100,NextGenesis Corporation,NXGEN
+704,716,"OceanaGold (Philippines), Inc.",OGP
+207,330,Omico Corporation,OM
+43,338,Oriental Petroleum and Minerals Corporation,OPM
+616,541,"Oriental Peninsula Resources Group, Inc.",ORE
+45,341,The Philodrill Corporation,OV
+109,342,"Pacifica Holdings, Inc.",PA
+20,189,"PAL Holdings, Inc.",PAL
+194,195,"Paxys, Inc.",PAX
+640,583,Philippine Business Bank,PBB
+208,110,Philippine Bank of Communications,PBC
+136,139,Petron Corporation,PCOR
+578,516,PetroEnergy Resources Corporation,PERC
+629,567,"Puregold Price Club, Inc.",PGOLD
+148,258,Premiere Horizon Alliance Corporation,PHA
+97,220,Philcomsat Holdings Corporation,PHC
+138,310,Philippine Estates Corporation,PHES
+107,184,Phinma Corporation,PHN
+631,570,"PH Resorts Group Holdings, Inc.",PHR
+664,631,"Shakey's Pizza Asia Ventures, Inc.",PIZZA
+96,253,DigiPlus Interactive Corp.,PLUS
+104,239,Panasonic Manufacturing Philippines Corporation,PMPC
+139,109,Philippine National Bank,PNB
+7,151,Philippine National Construction Corporation,PNC
+608,531,"Phoenix Petroleum Philippines, Inc.",PNX
+129,384,"Globalport 900, Inc.",PORT
+150,246,Pryce Corporation,PPC
+141,257,"Philippine Racing Club, Inc.",PRC
+699,694,Premiere Island Power REIT Corporation,PREIT
+30,106,"Prime Media Holdings, Inc.",PRIM
+214,419,Primex Corporation,PRMX
+142,112,Philippine Savings Bank,PSB
+478,512,"The Philippine Stock Exchange, Inc.",PSE
+144,393,Philippine Trust Company,PTC
+76,132,PT&T Corp.,PTT
+137,331,Philex Mining Corporation,PX
+628,566,PXP Energy Corporation,PXP
+232,113,Rizal Commercial Banking Corporation,RCB
+54,363,"Roxas and Company, Inc.",RCI
+684,670,"RL Commercial REIT, Inc.",RCR
+702,702,Repower Energy Development Corporation,REDC
+153,153,Republic Glass Holdings Corporation,REG
+77,164,RFM Corporation,RFM
+195,312,Robinsons Land Corporation,RLC
+40,313,Philippine Realty and Holdings Corporation,RLT
+635,574,Rockwell Land Corporation,ROCK
+64,250,"Roxas Holdings,  Inc.",ROX
+646,589,"Robinsons Retail Holdings, Inc.",RRHI
+658,612,SBS Philippines Corporation,SBS
+157,396,Semirara Mining and Power Corporation,SCC
+32,114,Security Bank Corporation,SECB
+143,251,Philippine Seven Corporation,SEVN
+165,402,"Swift Foods, Inc.",SFI
+160,224,"Solid Group, Inc.",SGI
+166,385,"Synergy Grid & Development Phils., Inc.",SGP
+663,629,Shell Pilipinas Corporation,SHLPH
+218,301,"Shang Properties, Inc.",SHNG
+78,122,Sun Life Financial Inc.,SLF
+41,417,"Sta. Lucia Land, Inc.",SLI
+599,520,SM Investments Corporation,SM
+154,165,San Miguel Corporation,SMC
+112,314,"SM Prime Holdings, Inc.",SMPH
+161,345,"SOCResources, Inc.",SOC
+237,466,SPC Power Corporation,SPC
+156,223,Seafront Resources Corporation,SPM
+688,678,SP New Energy Corporation,SPNEC
+479,513,Supercity Realty Development Corporation,SRDC
+654,604,"SSI Group, Inc.",SSI
+222,376,"STI Education Systems Holdings, Inc.",STI
+164,249,Steniel Manufacturing Corporation,STN
+147,333,"Vistamalls, Inc.",STR
+73,254,"Suntrust Resort Holdings, Inc.",SUN
+163,418,TKC Metals Corporation,T
+269,511,Transpacific Broadband Group Int`l. Inc.,TBGI
+630,569,Cirtek Holdings Philippines Corporation,TECH
+6,134,PLDT Inc.,TEL
+8,413,PTFC Redevelopment Corporation,TFC
+650,595,"Top Frontier Investment Holdings, Inc.",TFHI
+706,724,Top Line Business Development Corp.,TOP
+644,587,"Harbor Star Shipping Services, Inc.",TUGS
+167,115,Union Bank of the Philippines,UBP
+22,367,Uniholdings Inc.,UNH
+168,334,United Paragon Mining Corporation,UPM
+700,695,Upson International Corp.,UPSON
+124,167,Universal Robina Corporation,URC
+65,135,"Vantage Equities, Inc.",V
+28,168,Vitarich Corporation,VITA
+661,624,Villar Land Holdings Corp.,VLC
+607,530,"Vista Land & Lifescapes, Inc.",VLL
+123,415,"Victorias Milling Company, Inc.",VMC
+695,690,"VistaREIT, Inc.",VREIT
+79,133,Vivant Corporation,VVT
+122,136,PhilWeb Corporation,WEB
+90,229,"Wellex Industries, Incorporated",WIN
+665,632,"Wilcon Depot, Inc.",WLCON
+173,228,"Waterfront Philippines, Incorporated",WPI
+656,607,Xurpas Inc.,X
+705,717,NexGen Energy Corp.,XG
+89,232,"Zeus Holdings, Inc.",ZHI
